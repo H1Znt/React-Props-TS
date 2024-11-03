@@ -1,0 +1,16 @@
+.card-body-stars {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+li svg :hover {
+  fill: yellow;
+}
+
+ul {
+  margin-left: 0; 
+  padding-left: 0;
+}
