@@ -1,15 +1,14 @@
 import { ListItem } from "../ListItem/ListItem";
 import { IItem } from "../../models";
 
-type listingProps = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  items: any;
-};
+type TListingProps = {
+  items: IItem[]
+}
 
-export const Listing = ({ items }: listingProps) => {
+export const Listing = ( {items} : TListingProps ) => {
   return (
     <ul className="item-list">
-      {items.map((item: IItem) => (
+      {items.map((item) => (
         <ListItem key={item.listing_id} item={item} />
       ))}
     </ul>
