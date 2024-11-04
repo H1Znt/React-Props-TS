@@ -14,5 +14,3 @@ export const Listing = ( {items} : TListingProps ) => {
     </ul>
   );
 };
-
-export default Listing;

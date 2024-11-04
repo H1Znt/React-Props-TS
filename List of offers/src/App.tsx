@@ -3,7 +3,7 @@ import { Listing }from './components/Listing/Listing';
 import './App.css'
 
 function App() {
-  const dataProps = JSON.parse(data.toString())
+  const dataProps = data
   return (
     <Listing items={dataProps}></Listing>
   )
