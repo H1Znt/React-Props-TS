@@ -1,8 +1,8 @@
-import { TMainImage } from "./TMainImage";
-
 export interface IItem {
   url: string;
-  MainImage: TMainImage;
+  MainImage: {
+    url_570xN: string
+  };
   title: string;
   currency_code: string;
   price: string;

@@ -5,7 +5,8 @@ type TListingProps = {
   items: IItem[]
 }
 
-export const Listing = ( {items} : TListingProps ) => {
+export const Listing = ( {items} : TListingProps  ) => {
+  console.log(items)
   return (
     <ul className="item-list">
       {items.map((item) => (
