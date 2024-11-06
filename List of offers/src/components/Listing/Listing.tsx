@@ -1,12 +1,7 @@
 import { ListItem } from "../ListItem/ListItem";
 import { IItem } from "../../models";
 
-type TListingProps = {
-  items: IItem[]
-}
-
-export const Listing = ( {items} : TListingProps  ) => {
-  console.log(items)
+export const Listing = ( {items} : {items: IItem[]}  ) => {
   return (
     <ul className="item-list">
       {items.map((item) => (

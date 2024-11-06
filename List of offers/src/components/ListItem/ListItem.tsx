@@ -1,11 +1,7 @@
 import { TListItemProps } from "../../models";
 
 export const ListItem = ({ item }: TListItemProps) => {
-  const { url, MainImage, title, currency_code, price, quantity, state } = item;
-
-  if (state !== "active") {
-    return null;
-  }
+  const { url, MainImage, title, currency_code, price, quantity } = item;
 
   let priceTag;
   let colorClass;
